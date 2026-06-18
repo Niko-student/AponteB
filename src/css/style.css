@@ -72,4 +72,112 @@ button {
     font:       inherit;
 }
 
+/* ─── Utilitários ────────────────────────────────── */
 
+.container {
+    width:  min(var(--max), calc(100% - 28px));
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
+.section__head {
+    max-width: 760px;
+    margin-bottom: 36px;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--vinho);
+    font-weight: 700;
+    font-size: .76rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom:  10px;
+}
+
+.section__head h2 {
+    font-size: clamp(1.7rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    letter-spacing: -.04em;
+    color:  var(--azul-2);
+    margin: 8px 0 12px;
+}
+
+.section__head p {
+    color:     var(--muted);
+    font-size: .97rem;
+}
+
+.tag {
+    display: inline-flex;
+    padding: 8px 14px;
+    border-radius:  999px;
+    background:  rgba(217, 180, 95, .16);
+    color: var(--azul);
+    font-weight: 700;
+    font-size:  .78rem;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin-bottom:  18px;
+}
+
+.image-fallback {
+    display:    grid;
+    place-items: center;
+    text-align:  center;
+    color:  var(--azul);
+    font-weight: 700;
+    font-size:  .85rem;
+    line-height: 1.3;
+    min-height: 48px;
+}
+
+/* ─── Botões ─────────────────────────────────────── */
+
+.btn {
+    display:  inline-flex;
+    align-items:  center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: .92rem;
+    border:  1px solid transparent;
+    white-space: nowrap;
+    transition:   transform var(--transition), background var(--transition), box-shadow var(--transition);
+}
+
+.btn-primary {
+    background: var(--azul);
+    color: var(--branco);
+    box-shadow: 0 14px 32px rgba(0, 59, 99, .22);
+}
+
+.btn-primary:hover {
+    background: var(--azul-2);
+    transform:  translateY(-2px);
+}
+
+.btn-secondary {
+    border-color: rgba(0, 59, 99, .22);
+    color:        var(--azul);
+    background:   var(--branco);
+}
+
+.btn-secondary:hover {
+    background: var(--gelo);
+    transform:  translateY(-2px);
+}
+
+.btn--light {
+    background: var(--branco);
+    color:      var(--azul);
+}
+
+.btn--light:hover {
+    background: var(--gelo);
+    transform:  translateY(-2px);
+}
