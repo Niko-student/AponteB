@@ -1160,6 +1160,12 @@ section {
     font-size: .88rem;
 }
 
+.footer__logo {
+    padding-top: 5px;
+    background-color: var(--branco);
+    border-radius: 999px;
+}
+
 @media (min-width: 768px) {
 
   .footer__grid {
