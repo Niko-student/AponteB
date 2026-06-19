@@ -1053,11 +1053,26 @@ section {
 
 .testimonial__author {
     display:        flex;
-    flex-direction: column;
-    gap:            2px;
+    align-items:    center;
+    gap:            12px;
     margin-top:     auto;
     padding-top:    14px;
     border-top:     1px solid rgba(0, 59, 99, .08);
+}
+
+.testimonial__avatar {
+    width:         48px;
+    height:        48px;
+    border-radius: 50%;
+    object-fit:    cover;
+    flex:          0 0 auto;
+    border:        2px solid var(--dourado);
+}
+
+.testimonial__author-info {
+    display:        flex;
+    flex-direction: column;
+    gap:            2px;
 }
 
 .testimonial__name {
