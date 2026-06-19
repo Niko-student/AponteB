@@ -218,6 +218,10 @@ section {
     display: none;
 }
 
+#magia {
+    color: var(--vinho);
+}
+
 /* Nav aberto via JS */
 .header__nav.show {
     display: flex;
