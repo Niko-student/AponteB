@@ -928,8 +928,8 @@ section {
 @media (min-width: 1024px) {
 
   .services__grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items:           stretch;
+    grid-template-columns: repeat(2, 1fr);  /* era repeat(3, 1fr) */
+    align-items: stretch;
   }
 
   .service-card {
